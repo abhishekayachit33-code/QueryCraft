@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryCraft | AI-Powered SQL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">QueryCraft.</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#generator" class="btn btn-primary">Try QueryCraft Engine</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <h1>Schema-Aware SQL Generation</h1>
+                <p>Transform natural language into optimized SQL queries instantly. Streamline your database interactions with intelligent, context-aware AI.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Try the Beta</a>
+                    <a href="#" class="btn btn-secondary">View Documentation</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="hero container" style="padding-top: 2rem;">
+            <h2 class="section-title">How It Works</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Connect</h3>
+                    <p>Securely link your SQL database schema to the QueryCraft engine.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Prompt</h3>
+                    <p>Type your request in plain English (e.g., "Show me active users from last month").</p>
+                </div>
+                <div class="card">
+                    <h3>3. Execute</h3>
+                    <p>Review the generated, optimized SQL query and execute it instantly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features bg-light">
+            <div class="container">
+                <h2 class="section-title">Why QueryCraft?</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Context Engine</h3>
+                        <p>Understands your specific database schema to generate accurate, non-hallucinated SQL.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Seamless Integration</h3>
+                        <p>Connects easily with PostgreSQL, MySQL, and SQLite environments in minutes.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Performance Tuned</h3>
+                        <p>Generates queries optimized for speed and low computational overhead.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="generator" class="features container">
+            <h2 class="section-title">Try QueryCraft Engine</h2>
+            <div class="generator-box">
+                
+                <div class="input-group">
+                    <label for="user-prompt">Describe your database request:</label>
+                    <textarea id="user-prompt" placeholder="e.g., Show me the top 10 highest paying customers from last month..."></textarea>
+                    <button id="generate-btn" class="btn btn-primary">Generate SQL</button>
+                </div>
+
+                <div class="output-group">
+                    <div class="output-header">
+                        <span>Llama-3 Mock Output</span>
+                    </div>
+                    <pre><code id="sql-output">-- Your optimized SQL query will appear here...</code></pre>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 QueryCraft. Built for modern engineers.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
